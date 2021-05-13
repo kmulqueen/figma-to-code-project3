@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Data Analytics Dashboard</title>
 </head>
@@ -13,7 +15,9 @@
     <div class="container">
         <div class="left-col">
             <nav>
-                <img src="./back-arrow.svg" alt="" class="back-button">
+                <svg class="back-button">
+                    <use href="./back-arrow.svg#arrow" />
+                </svg>
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#" class="active">My Stats</a></li>
@@ -23,9 +27,11 @@
                 </ul>
             </nav>
         </div>
-        <div class="section main">
+        <section class="main">
             <header>
-                <img src="./menu.svg" alt="" class="menu-button">
+                <svg class="menu-button">
+                    <use href='./menu.svg#menu' />
+                </svg>
                 <p class="logo">Logo</p>
             </header>
             <div class="center-vertical">
@@ -35,7 +41,7 @@
                     <a href="#" class="cta">Go to my stats</a>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
     <script src="./script.js"></script>
 </body>
