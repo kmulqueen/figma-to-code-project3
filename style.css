@@ -160,3 +160,73 @@ h1 {
 .cta:hover {
     background: var(--primary-color);
 }
+
+@media only screen and (min-width: 500px) {
+    .content p {
+        width: 50%;
+    }
+
+    .main {
+        background-position: unset;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    nav {
+        position: unset;
+        transform: translateX(0) !important;
+        border-radius: unset;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        height: 100%;
+    }
+
+    .menu-button,
+    .back-button {
+        display: none;
+    }
+
+    ul {
+        margin-top: 4em;
+    }
+
+    header {
+        padding: 1.6em;
+    }
+
+    .container {
+        display: flex;
+        padding: 2em;
+    }
+
+    .logo {
+        text-align: left;
+    }
+
+    .main {
+        border-radius: unset;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+        width: 100%;
+        background-size: cover;
+        background-position: 0;
+        background-attachment: unset;
+    }
+
+    .content {
+        justify-self: left;
+        margin-left: 4em;
+    }
+
+    .content p {
+        width: 60%;
+    }
+
+    .left-col {
+        display: flex;
+    }
+
+
+
+    
+}
